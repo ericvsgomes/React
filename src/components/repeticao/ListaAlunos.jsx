@@ -1,7 +1,7 @@
 import React from "react";
 import alunos from "../../data/alunos";
 
-export default props => {
+const listaAlunos = props => {
 const alunosJSX = alunos.map(aluno => {
     return (
         <li>
@@ -18,3 +18,5 @@ const alunosJSX = alunos.map(aluno => {
         </div>
     )
 }
+
+export default listaAlunos;

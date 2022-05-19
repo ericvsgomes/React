@@ -2,10 +2,10 @@ import React from "react";
 import produtos from "../../data/produtos";
 import "./TabelaProdutos.css"
 
-export default props => {
+const tabelaProdutos = props => {
     const linhas = produtos.map((produto, i) => {
         return (      
-            <tr className={i % 2 == 0 ? 'Par' : ''}>
+            <tr className={i % 2 === 0 ? 'Par' : ''}>
                 <td>
                     { produto.id }
                 </td>
@@ -36,3 +36,5 @@ export default props => {
         </div>
     )
 }
+
+export default tabelaProdutos;

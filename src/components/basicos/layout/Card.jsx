@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 
-export default props => {
+const card = props => {
 
     const cardStyle = {
         backgroundColor: props.color || '#F00',
@@ -17,3 +17,5 @@ export default props => {
         </div>
     )
 }
+
+export default card;

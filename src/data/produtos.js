@@ -1,4 +1,4 @@
-export default [
+const produtos = [
     { id: 1, item: "Arroz", preco: 3.45 },
     { id: 2, item: "Feijão", preco: 6.10 },
     { id: 3, item: "Açucar", preco: 3.20 },
@@ -10,3 +10,5 @@ export default [
     { id: 9, item: "Cocada", preco: 3.99 },
     { id: 10, item: "Doce", preco: 3.89 }
 ]
+
+export default produtos;

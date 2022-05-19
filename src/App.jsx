@@ -11,7 +11,7 @@ import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 
-export default _ =>
+const app = _ => {
     <div className="App">
         <h1>Fundamentos React</h1>
 
@@ -54,3 +54,6 @@ export default _ =>
             </Card>
         </div>        
     </div>
+}
+
+export default app;
