@@ -1,7 +1,7 @@
 //max - min - sortear forma aletoria
 import React from "react";
 
-const aleatorio = (props) => {
+const Aleatorio = (props) => {
     const {min, max} = props
     const sorteio = parseInt(Math.random() * (max - min)) + min;
     return (
@@ -14,4 +14,4 @@ const aleatorio = (props) => {
     )
 }
 
-export default aleatorio;
+export default Aleatorio;

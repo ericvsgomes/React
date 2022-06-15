@@ -1,6 +1,6 @@
 import React, { Children, cloneElement } from "react";
 
-const familia = props => {
+const Familia = props => {
     return (
         <div>
             {
@@ -12,4 +12,4 @@ const familia = props => {
     )
 }
 
-export default familia;
+export default Familia;

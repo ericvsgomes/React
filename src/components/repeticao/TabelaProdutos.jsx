@@ -2,7 +2,7 @@ import React from "react";
 import produtos from "../../data/produtos";
 import "./TabelaProdutos.css"
 
-const tabelaProdutos = props => {
+const TabelaProdutos = props => {
     const linhas = produtos.map((produto, i) => {
         return (      
             <tr className={i % 2 === 0 ? 'Par' : ''}>
@@ -37,4 +37,4 @@ const tabelaProdutos = props => {
     )
 }
 
-export default tabelaProdutos;
+export default TabelaProdutos;

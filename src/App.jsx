@@ -1,6 +1,10 @@
 import React from "react";
 import "./App.css";
 
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import ParOuImpar from "./components/condicional/ParOuImpar";
 import Card from "./components/basicos/layout/Card";
 import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
@@ -11,11 +15,25 @@ import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 
-const app = _ => {
+const app = _ => (
     <div className="App">
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="#10 - Comunicação Indireta" color="#DAA520">
+                <IndiretaPai />
+            </Card>
+
+            <Card titulo="#09 - Comunicação Direta" color="#1E90FF">
+                <DiretaPai />
+            </Card>
+            
+            <Card titulo="#08 - Renderização Condicional" color="#982395">
+                <ParOuImpar numero={15} />
+                <UsuarioInfo usuario={{ nome: 'João' }} />
+                <UsuarioInfo usuario={{ email: 'teste@bc.com' }} />
+            </Card>
+
             <Card titulo="#07 - Desafio Repetição" color="#FF432E">
                 <TabelaProdutos />
             </Card>
@@ -54,6 +72,6 @@ const app = _ => {
             </Card>
         </div>        
     </div>
-}
+)
 
 export default app;
