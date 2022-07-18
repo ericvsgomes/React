@@ -23,7 +23,7 @@ const app = _ => (
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
-            <Card titulo="#13 - Mega" color="#424242">
+            <Card titulo="#13 - Mega" color="#B9006E">
                 <Mega quantidade={7} />
             </Card>
 

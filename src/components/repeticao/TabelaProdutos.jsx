@@ -5,7 +5,7 @@ import "./TabelaProdutos.css"
 const TabelaProdutos = props => {
     const linhas = produtos.map((produto, i) => {
         return (      
-            <tr className={i % 2 === 0 ? 'Par' : ''}>
+            <tr key={produto.id} className={i % 2 === 0 ? 'Par' : ''}>
                 <td>
                     { produto.id }
                 </td>
